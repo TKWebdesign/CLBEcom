@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Christian Louboutin - Ecom Image Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="product text-center">
+                <div class="product-imgs">
+                    <img src="1.jpeg" onclick="myFunction(this);">
+                    <img src="2.jpeg" onclick="myFunction(this);">
+                    <img src="3.jpeg" onclick="myFunction(this);">
+                    <img src="4.jpeg" onclick="myFunction(this);">
+                    <img src="5.jpeg" onclick="myFunction(this);">
+                </div>
+                <div class="img-container">
+                    <img id="imagebox" src="1.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="details">
+                <h3><b>Christian Louboutin<br>So Me 100 Leather Heeled Sandals</b></h3>
+                <p>Product Care - The red lacquer of the soles wear out with use. This is not a manufacturing defect; it is simply normal wear and tear. Christian Louboutin strongly recommends that its customers consult a professional in leather care or a shoemaker for specific care advice</p>
+                <ul>
+                    <li>100% Leather</li>
+                    <li>Heel Height 4.00" / 120mm</li>
+                    <li>Upper: 100% Leather</li>
+                    <li>Sole: 100% Leather</li>
+                    <li>Made in Italy (like pasta lol)</li>
+                </ul>
+                <div class="prods">
+                    <span>See Similar Products</span>
+                </div>
+                <br>
+                <div>
+                    <label>Size</label>
+                    <select class="size">
+                        <option value="Eur 35/2 UK Women" selected>Eur 35/2 UK Women</option>
+                        <option value="Eur 36/3 UK Women">Eur 36/3 UK Women</option>
+                        <option value="Eur 37/4 UK Women">Eur 37/4 UK Women</option>
+                        <option value="Eur 38/5 UK Women">Eur 38/5 UK Women</option>
+                    </select>
+                </div>
+                <div class="price">
+                    <b>£650.00</b>
+                </div>
+                <a href="" class="btn cart"><i class="fa fa-shopping-bag"></i>Add to Cart</a>
+                <a href="" class="btn"><i class="fa fa-heart"></i>Wish List</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function myFunction(smallImg){
+        var fullImg = document.getElementById("imagebox");
+        fullImg.src = smallImg.src;
+    }
+</script>
+
+    
+</body>
+</html>
